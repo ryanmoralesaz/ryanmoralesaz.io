@@ -15,7 +15,6 @@ class Contact extends Component {
           textAlign: 'left'
         }}>
       <h2>Contact Ryan</h2>
-      <a href="linkedin.com/in/ryanmoralesaz"><Button>Connect on LinkedIn</Button></a>
         <form
                 action="https://formspree.io/ryanmoralesaz@gmail.com"
                 method="post"
