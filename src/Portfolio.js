@@ -149,15 +149,7 @@ class Portfolio extends Component {
             </Card>
             <CardImg className="h-50" src={interactiveFormImg} />
             <Row className="mt-2">
-              {/*
-              <Col className="pb-5">
-                <a href="/interactiveform">
-                  <Button className="w-100" color="info">
-                    Info
-                  </Button>
-                </a>
-              </Col>
-              */}
+            
               <Col className="pb-5">
                 <a href="https://ryanmoralesaz.github.io/interactive-form/">
                   <Button className="w-100" color="success">
@@ -180,11 +172,7 @@ class Portfolio extends Component {
             </Card>
             <CardImg className="h-50" src={twitterAPI} />
             <Row className="mt-2">
-              {/*
-              <Col className="pb-5">
-                <PageFilter />
-              </Col>
-*/}
+
               <Col className="pb-5">
                 <a href="https://github.com/ryanmoralesaz/twit-api-project">
                   <Button className="w-100" color="warning">
@@ -195,199 +183,7 @@ class Portfolio extends Component {
             </Row>
           </Col>
         </Row>
-        /*<Card color="danger" className="mb-5">
-          <h2 className="pt-2">Experiments</h2>
-        </Card>
-        <Row className="mb-2">
-          <Col m>
-            <Card color="light" style={{ border: 0 }}>
-              <h2 className="pt-2">Sonic Game</h2>
-            </Card>
-            <CardImg className="h-50" src={sonicGameImg} />
-            <Row className="mt-2">
-              {
-              <Col className="pb-5">
-                <a href="/sonicgame">
-                  <Button className="w-100" color="info">
-                    Info
-                  </Button>
-                </a>
-              </Col>
-              }
-              <Col className="pb-5">
-                <a href="https://ryanmoralesaz.github.io/sonic-game/">
-                  <Button className="w-100" color="success">
-                    Live Demo
-                  </Button>
-                </a>
-              </Col>
-              <Col className="pb-5">
-                <a href="https://github.com/ryanmoralesaz/sonic-game/">
-                  <Button className="w-100" color="warning">
-                    See Code
-                  </Button>
-                </a>
-              </Col>
-            </Row>
-          </Col>
-          <Col sm>
-            <Card color="light" style={{ border: 0 }}>
-              <h2 className="pt-2">Paint Canvas</h2>
-            </Card>
-            <CardImg className="h-50" src={paintCanvasImg} />
-            <Row className="mt-2">
-              {/*
-              <Col className="pb-5">
-                <a href="/paintcanvas">
-                  <Button className="w-100" color="info">
-                    Info
-                  </Button>
-                </a>
-              </Col>
-              }
-              <Col className="pb-5">
-                <a href="https://ryanmoralesaz.github.io/paintcanvas">
-                  <Button className="w-100" color="success">
-                    Live Demo
-                  </Button>
-                </a>
-              </Col>
-              <Col className="pb-5">
-                <a href="https://github.com/ryanmoralesaz/paintcanvas/">
-                  <Button className="w-100" color="warning">
-                    See Code
-                  </Button>
-                </a>
-              </Col>
-            </Row>
-          </Col>
-          <Col sm>
-            <Card color="light" style={{ border: 0 }}>
-              <h2 className="pt-2">Gif Search App</h2>
-            </Card>
-            <CardImg className="h-50" src={gifSearch} />
-            <Row className="mt-2">
-              {/*
-              <Col className="pb-5">
-                <a href="/gifsearch">
-                  <Button className="w-100" color="info">
-                    Info
-                  </Button>
-                </a>
-              </Col>
-              }
-              <Col className="pb-5">
-                <a href="https://giphy-project-th.herokuapp.com/">
-                  <Button className="w-100" color="success">
-                    Live Demo
-                  </Button>
-                </a>
-              </Col>
-              <Col className="pb-5">
-                <a href="https://github.com/ryanmoralesaz/gif-search">
-                  <Button className="w-100" color="warning">
-                    See Code
-                  </Button>
-                </a>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-        <Row className="mb-2">
-          <Col sm>
-            <Card color="light" style={{ border: 0 }}>
-              <h2 className="pt-2">CandaceTeroids</h2>
-            </Card>
-            <CardImg className="h-50" src={candaceteroids} />
-            <Row className="mt-2">
-              {/*
-              <Col className="pb-5">
-                <a href="/candaceteroids">
-                  <Button className="w-100" color="info">
-                    Info
-                  </Button>
-                </a>
-              </Col>
-              }
-              <Col className="pb-5">
-                <a href="https://ryanmoralesaz.github.io/candace-asteroids/">
-                  <Button className="w-100" color="success">
-                    Live Demo
-                  </Button>
-                </a>
-              </Col>
-              <Col className="pb-5">
-                <a href="https://github.com/ryanmoralesaz/candace-asteroids/">
-                  <Button className="w-100" color="warning">
-                    See Code
-                  </Button>
-                </a>
-              </Col>
-            </Row>
-          </Col>
-          <Col sm>
-            <Card color="light" style={{ border: 0 }}>
-              <h2 className="pt-2">Hero Calculator</h2>
-            </Card>
-            <CardImg className="h-50" src={heroCalcImg} />
-            <Row className="mt-2">
-              {/*
-              <Col className="pb-5">
-                <a href="/herocalculator">
-                  <Button className="w-100" color="info">
-                    Info
-                  </Button>
-                </a>
-              </Col>
-              }
-              <Col className="pb-5">
-                <a href="https://ryanmoralesaz.github.io/hero-calculator/">
-                  <Button className="w-100" color="success">
-                    Live Demo
-                  </Button>
-                </a>
-              </Col>
-              <Col className="pb-5">
-                <a href="https://github.com/ryanmoralesaz/hero-calculator/">
-                  <Button className="w-100" color="warning">
-                    See Code
-                  </Button>
-                </a>
-              </Col>
-            </Row>
-          </Col>
-          <Col sm>
-            <Card color="light" style={{ border: 0 }}>
-              <h2 className="pt-2">Yoshi Test</h2>
-            </Card>
-            <CardImg className="h-50" src={yoshiTest} />
-            <Row className="mt-2">
-              {/*
-              <Col className="pb-5">
-                <a href="/yoshitest">
-                  <Button className="w-100" color="info">
-                    Info
-                  </Button>
-                </a>
-              </Col>
-              }
-              <Col className="pb-5">
-                <a href="https://ryanmoralesaz.github.io/yoshi-animation/">
-                  <Button className="w-100" color="success">
-                    Live Demo
-                  </Button>
-                </a>
-              </Col>
-              <Col className="pb-5">
-                <a href="https://github.com/ryanmoralesaz/yoshi-animation/">
-                  <Button className="w-100" color="warning">
-                    See Code
-                  </Button>
-                </a>
-              </Col>
-            </Row>
-          </Col>
-        </Row>*/
+
       </Container>
     );
   }
