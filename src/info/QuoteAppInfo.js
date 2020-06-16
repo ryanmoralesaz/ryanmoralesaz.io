@@ -3,6 +3,7 @@ import { Card, CardImg, Row, Col, Button } from "reactstrap";
 import quoteAppPng from "../gifs/quote-generator-lg.gif";
 import Modal from "react-modal";
 import "react-router-modal/css/react-router-modal.css";
+import "../App.css";
 
 class QuoteAppInfo extends Component {
   constructor() {
@@ -34,9 +35,12 @@ class QuoteAppInfo extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.openModal} color="info">
-          Info
+
+        <Button onClick={this.openModal} color="info" className="w-100">
+          Get <br/>Info
         </Button>
+
+
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -44,9 +48,10 @@ class QuoteAppInfo extends Component {
           contentLabel="Example Modal"
         >
           <div>
-            <Button onClick={this.closeModal} color="danger">
-              close
-            </Button>
+          <Button onClick={this.closeModal} className="float" color="danger">
+            X
+          </Button>
+
             <h1 style={{ textAlign: "center", marginBottom: "3rem" }}>
               Quote Generator
             </h1>
@@ -61,6 +66,13 @@ class QuoteAppInfo extends Component {
             <Row className="m-auto w-75">
               <Col>
                 <CardImg src={quoteAppPng} />
+              </Col>
+              <Col className="pb-5">
+              <a href = "https://ryanmoralesaz.github.io/quote_generator/" >
+                  <Button color="success">
+                    Live Demo
+                  </Button>
+                </a>
               </Col>
             </Row>
             <h2>Total Lines of Code</h2>

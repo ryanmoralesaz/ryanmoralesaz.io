@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Card, CardImg, Row, Col, Button } from "reactstrap";
 import Modal from "react-modal";
 import "react-router-modal/css/react-router-modal.css";
-
+import "../App.css";
 import twitterApi from "../gifs/tweeter.gif";
 
 class TwitterApi extends Component {
@@ -36,9 +36,9 @@ class TwitterApi extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.openModal} color="info">
-          Info
-        </Button>
+      <Button onClick={this.openModal} color="info" className="w-100">
+        Get <br/>Info
+      </Button>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -46,9 +46,9 @@ class TwitterApi extends Component {
           contentLabel="Example Modal"
         >
           <div>
-            <Button onClick={this.closeModal} color="danger">
-              close
-            </Button>
+          <Button onClick={this.closeModal} className="float" color="danger">
+            X
+          </Button>
             <h1 style={{ textAlign: "center", marginBottom: "3rem" }}>
               Twitter API
             </h1>

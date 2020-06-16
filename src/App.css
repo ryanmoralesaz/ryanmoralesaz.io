@@ -8,6 +8,12 @@ body {
   margin: 0;
 
 }
+.float {
+  position:fixed;
+  margin-top:22px;
+  margin-right: 100px;
+  right: 0;
+}
 /******FORM STYLES******/
 form {
   padding: 0.875em 1.875em 1.875em;

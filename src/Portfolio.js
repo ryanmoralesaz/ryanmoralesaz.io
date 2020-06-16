@@ -16,10 +16,8 @@ import PageFilter from "./info/PageFilter";
 import EmployeeDirectory from "./info/EmployeeDirectory";
 import InteractiveForm from "./info/InteractiveForm";
 import TwitterApi from "./info/TwitterApi";
-import SonicGame from "./info/SonicGame";
-import PaintCanvas from "./info/PaintCanvas";
-import YoshiTest from "./info/YoshiTest";
-import CandaceTeroids from "./info/CandaceTeroids";
+import FlickrAPI from "./info/FlickrApi";
+import ContentScraper from "./info/ContentScraper";
 //import gifs
 import quoteAppPng from "./gifs/quote-generator-lg.gif";
 import pageFilter from "./gifs/list-filter.gif";
@@ -27,19 +25,15 @@ import employeeDirectoryImg from "./gifs/employee-directory.gif";
 import interactiveFormImg from "./gifs/interactive-form.gif";
 import twitterAPI from "./gifs/tweeter.gif";
 import ticTacToeImg from "./gifs/tictactoe.gif";
-import heroCalcImg from "./gifs/hero-calc.gif";
-import paintCanvasImg from "./gifs/paint-canvas.gif";
-import sonicGameImg from "./gifs/sonic.gif";
-import candaceteroids from "./gifs/candaceteroids.gif";
-import yoshiTest from "./gifs/yoshi-animation.gif";
-import gifSearch from "./gifs/gif-search.gif";
+import flickrImage from "./gifs/flickr-image.gif";
+import contentScraper from "./gifs/scraper.gif";
 // import jpg,png
 
 class Portfolio extends Component {
   render() {
     return (
       <Container>
-        <div />
+        {/*</div>*/}
         <Row className="mb-2">
           <Col sm>
             <Card color="light" style={{ border: 0 }}>
@@ -51,7 +45,7 @@ class Portfolio extends Component {
                 <QuoteAppInfo />
               </Col>
               <Col className="pb-5">
-                <a href="https://ryanmoralesaz.github.io/quote_generator/">
+              <a href = "https://ryanmoralesaz.github.io/quote_generator/" >
                   <Button className="w-100" color="success">
                     Live Demo
                   </Button>
@@ -149,7 +143,9 @@ class Portfolio extends Component {
             </Card>
             <CardImg className="h-50" src={interactiveFormImg} />
             <Row className="mt-2">
-            
+              <Col className="pb-5">
+                <InteractiveForm />
+              </Col>
               <Col className="pb-5">
                 <a href="https://ryanmoralesaz.github.io/interactive-form/">
                   <Button className="w-100" color="success">
@@ -172,9 +168,38 @@ class Portfolio extends Component {
             </Card>
             <CardImg className="h-50" src={twitterAPI} />
             <Row className="mt-2">
-
+            <Col className="pb-5">
+              <TwitterApi />
+            </Col>
               <Col className="pb-5">
                 <a href="https://github.com/ryanmoralesaz/twit-api-project">
+                  <Button className="w-100" color="warning">
+                    See <br/>Code
+                  </Button>
+                </a>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+        <Row className="mb-2">
+          <Col sm>
+            <Card color="light" style={{ border: 0 }}>
+              <h2 className="pt-2">Flickr Gallery API</h2>
+            </Card>
+            <CardImg className="h-50" src={flickrImage} />
+            <Row className="mt-2">
+              <Col className="pb-5">
+                <FlickrAPI />
+              </Col>
+              <Col className="pb-5">
+                <a href="https://rmaz-gallery-app.herokuapp.com/">
+                  <Button className="w-100" color="success">
+                    Live Demo
+                  </Button>
+                </a>
+              </Col>
+              <Col className="pb-5">
+                <a href="https://github.com/ryanmoralesaz/gallery-app">
                   <Button className="w-100" color="warning">
                     See Code
                   </Button>
@@ -182,8 +207,29 @@ class Portfolio extends Component {
               </Col>
             </Row>
           </Col>
-        </Row>
+          <Col sm>
+          <Card color="light" style={{ border: 0 }}>
+            <h2 className="pt-2">Content Scraper</h2>
+          </Card>
+          <CardImg className="h-50" src={contentScraper} />
+          <Row className="mt-2">
+            <Col className="pb-5">
+              <ContentScraper />
+            </Col>
 
+            <Col className="pb-5">
+              <a href="https://github.com/ryanmoralesaz/content-scraper">
+                <Button className="w-100" color="warning">
+                  See <br/>Code
+                </Button>
+              </a>
+            </Col>
+          </Row>
+          </Col>
+          <Col sm>
+
+          </Col>
+        </Row>
       </Container>
     );
   }

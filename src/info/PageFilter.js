@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Card, CardImg, Row, Col, Button } from "reactstrap";
 import Modal from "react-modal";
 import "react-router-modal/css/react-router-modal.css";
-
+import "../App.css";
 import listFilter from "../gifs/list-filter.gif";
 
 class PageFilter extends Component {
@@ -35,9 +35,9 @@ class PageFilter extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.openModal} color="info">
-          Info
-        </Button>
+      <Button onClick={this.openModal} color="info" className="w-100">
+        Get <br/>Info
+      </Button>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
@@ -45,9 +45,9 @@ class PageFilter extends Component {
           contentLabel="Example Modal"
         >
           <div>
-            <Button onClick={this.closeModal} color="danger">
-              close
-            </Button>
+          <Button onClick={this.closeModal} className="float" color="danger">
+            X
+          </Button>
             <h1 style={{ textAlign: "center", marginBottom: "3rem" }}>
               Pagination Filter
             </h1>
@@ -61,6 +61,13 @@ with functional page navigation added to the bottom of the page.
             <Row className="w-50 m-auto">
               <Col>
                 <CardImg src={listFilter} style={{ height: "300px" }} />
+              </Col>
+              <Col className="pb-5">
+              <a href = "https://ryanmoralesaz.github.io/pagination-filter/" >
+                  <Button color="success">
+                    Live Demo
+                  </Button>
+                </a>
               </Col>
             </Row>
             <h2>Total Lines of Code</h2>
