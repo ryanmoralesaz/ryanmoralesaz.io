@@ -192,11 +192,7 @@ class Portfolio extends Component {
                 <FlickrAPI />
               </Col>
               <Col className="pb-5">
-                <a href="https://rmaz-gallery-app.herokuapp.com/">
-                  <Button className="w-100" color="success">
-                    Live Demo
-                  </Button>
-                </a>
+              
               </Col>
               <Col className="pb-5">
                 <a href="https://github.com/ryanmoralesaz/gallery-app">
