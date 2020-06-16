@@ -53,7 +53,7 @@ class InteractiveForm extends Component {
               Interactive Form
             </h1>
             <h2>Description</h2>
-            <p>Lorem</p>
+            <p>This is a demonstration of html form tags proficiency. The form is self-correcting giving warnings if data is entered incorrectly.</p>
             <Row className="w-50 m-auto">
               <Col>
                 <CardImg src={interactiveForm} style={{ height: "300px" }} />
@@ -66,6 +66,7 @@ class InteractiveForm extends Component {
                 </a>
               </Col>
             </Row>
+            {/*
             <h2>Total Lines of Code</h2>
             <p>#</p>
             <h2>Invested Hours</h2>
@@ -77,7 +78,7 @@ class InteractiveForm extends Component {
             <h2>Special Features</h2>
             <p>lorem</p>
             <h2>Assets Used</h2>
-            <p>lorem</p>
+            <p>lorem</p>*/}
             <h3>Origin/Credits</h3>
             <p>
               This app originated as a project for the Treehouse Full-Stack

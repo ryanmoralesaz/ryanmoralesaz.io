@@ -53,12 +53,13 @@ class TwitterApi extends Component {
               Twitter API
             </h1>
             <h2>Description</h2>
-            <p>Lorem</p>
+            <p>This is a working single-page application (SPA) that allows a user to post to their own feed. Twitter developer keys are required.</p>
             <Row className="w-50 m-auto">
               <Col>
                 <CardImg src={twitterApi} style={{ height: "300px" }} />
               </Col>
             </Row>
+            {/*
             <h2>Total Lines of Code</h2>
             <p>#</p>
             <h2>Invested Hours</h2>
@@ -71,6 +72,7 @@ class TwitterApi extends Component {
             <p>lorem</p>
             <h2>Assets Used</h2>
             <p>lorem</p>
+            */}
             <h3>Origin/Credits</h3>
             <p>
               This app originated as a project for the Treehouse Full-Stack
